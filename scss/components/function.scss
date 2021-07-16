@@ -1,0 +1,33 @@
+@mixin MarPad {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin title {
+  font-style: normal;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 42px;
+  color: $title;
+  margin-bottom: 60px
+}
+
+@mixin button-all {
+  @include linear-g();
+  border-radius: 50px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 28px;
+  padding: 20px 40px;
+  color: #ffffff;
+}
+@mixin linear-g {
+  background: linear-gradient(
+    90.23deg,
+    #ff84fd -3.91%,
+    rgba(122, 122, 253, 0) 230.74%
+  );
+}

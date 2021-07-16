@@ -1,0 +1,37 @@
+// Body
+
+
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+
+// Colors
+$gg: #e5a44b;
+$Fc: #e5a44b;
+$Bc: #bcb4b4;
+$title: #4f4f4f;
+$stitle: #828282;
+$Cb: #f5f5f9;
+$Cr: #e7e7f2;
+$Hero-bg: #f7f7f7;
+$Bg: #ffffff;
+//body
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  transition: all ease 0.3s;
+}

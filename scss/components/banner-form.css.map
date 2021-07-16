@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,YAFQ,CACV,YAAY,CACV,WAAW,CAAC;EACV,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,iBAAiB;EACzB,UAAU,EAAE,UAAU;EACtB,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "banner-form.scss"
+    ],
+    "names": [],
+    "file": "banner-form.css"
+}
