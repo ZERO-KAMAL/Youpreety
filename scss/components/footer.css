@@ -25,7 +25,7 @@ body {
 
 .footer {
   background-color: white !important;
-  padding: 70px 0 70px 0px;
+  padding: 70px 0 0px 0px;
 }
 
 .footer .widget-title {
@@ -36,22 +36,12 @@ body {
   text-transform: uppercase;
 }
 
-.footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  width: 100%;
-  margin-top: 25px;
-}
-
 .footer .footer-widget .contact-info-widget {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
 }
 
 .footer .footer-widget .contact-info-widget .oceanwp-info-wrap {
@@ -140,7 +130,18 @@ body {
   margin-left: 8px;
 }
 
-.footer .title-footer .socail-media-icon a {
+.footer .title-footer .socail-media-icon li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.footer .title-footer .socail-media-icon li a {
   background: linear-gradient(90.23deg, #ff84fd -3.91%, rgba(122, 122, 253, 0) 230.74%);
   width: 40px;
   height: 40px;
@@ -151,7 +152,7 @@ body {
   color: #fff;
 }
 
-.footer .title-footer .socail-media-icon a i {
+.footer .title-footer .socail-media-icon li a i {
   font-size: 15px;
 }
 
@@ -185,12 +186,19 @@ body {
 @media screen and (max-width: 768px) {
   .footer .col-md-3 {
     margin-bottom: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .footer .title-footer {
-    text-align: center !important;
+  .footer .newsletter {
+    text-align: center;
   }
-  .footer .title-footer ul {
-    display: none;
+  .footer .newsletter p {
+    text-align: center;
+  }
+  .footer .footer-widget {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -199,11 +207,14 @@ body {
   background-color: #e7e7f2;
 }
 
-#footer-bottom .copyright span,
 #footer-bottom .copyright a {
   color: #878787;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+#footer-bottom .copyright .cpy {
+  text-decoration: none;
 }
 
 #footer-bottom .copyright a:hover {
@@ -215,11 +226,11 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  margin: 0;
 }
 
 #footer-bottom .copyright .copyright-menu ul li {
@@ -228,11 +239,13 @@ body {
 }
 
 @media screen and (max-width: 770px) {
-  #footer-bottom .col-md-6 {
-    margin-bottom: 30px;
+  #footer-bottom .copyright .copyright-menu {
+    margin-top: 20px;
   }
-  #footer-bottom .col-md-6 ul {
-    text-align: start;
+  #footer-bottom .copyright .cpy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=footer.css.map */

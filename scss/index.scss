@@ -1,19 +1,4 @@
 @import "./components/base.scss";
-.arrow {
-  border-radius: 4px;
-  width: 35px;
-  height: 35px;
-  background-color: $Fc;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
-  line-height: 35px;
-  text-align: center;
-  i {
-    color: #1e1e1e;
-  }
-}
 
 #Banner {
   height: 100%;
@@ -86,7 +71,7 @@
         @media screen and (max-width: 762px) {
           .form-btn {
             position: absolute;
-            left: 5%;
+            left:15%;
           }
           .form-group {
             margin-top: 20px;
@@ -324,7 +309,6 @@
               .button-all {
                 @include button-all;
                 font-size: 14px;
-                text-align: end;
                 margin-left: 220px;
               }
               .column img {
@@ -363,6 +347,20 @@
                 img {
                   display: block;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 762px) {
+      .tab-content{
+        ul{
+          li{
+            .left-content{
+              .button-all{
+                margin-left: 60px !important;
+                
               }
             }
           }

@@ -1,11 +1,11 @@
 // AOS.init();
-// $(window).scroll(function () {
-//     if ($(this).scrollTop() > 150) {
-//         $('.arrow').show();
-//     } else {
-//         $('.arrow').hide();
-//     }
-// });
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('.back-to-top').show();
+    } else {
+        $('.back-to-top').hide();
+    }
+});
 // ON DOM READY
 $(function () {
   // VARIABLES
