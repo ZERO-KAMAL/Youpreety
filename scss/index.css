@@ -479,7 +479,7 @@ body {
 @media screen and (max-width: 762px) {
   #Banner .banner-inner .banner-from .form-inline .form-btn {
     position: absolute;
-    left: 10%;
+    left: 5%;
   }
   #Banner .banner-inner .banner-from .form-inline .form-group {
     margin-top: 20px;
