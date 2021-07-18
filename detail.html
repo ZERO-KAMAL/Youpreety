@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/index.css">
+
+    <title>Youpretty</title>
+</head>
+
+<body>
+
+    <Section id="NavBar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="index.html">Youpretty</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto  mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login / Signup</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </Section>
+    <section id="search-pannel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="banner-from">
+                        <div class="container">
+                            <form class="form-inline">
+                                <div class="row d-inline">
+                                    <div class="col">
+                                        <div class="form-group d-flex align-items-center">
+                                            <label for="focusedInput"><i
+                                                    class="fas fa-map-marker-alt me-2 ps-2"></i></label>
+                                            <input class="form-control p-2" id="focusedInput" type="text"
+                                                placeholder="Search Location">
+                                        </div>
+                                    </div>
+                                    <div class="col mt-3">
+                                        <div class="form-group ">
+                                            <input class="form-control  p-2" id="focusedInput" type="text"
+                                                placeholder="What are you looking for">
+                                        </div>
+
+                                    </div>
+                                    <div class="col mt-3">
+                                        <div class="form-group d-flex align-items-center">
+                                            <label for="focusedInput"><i
+                                                    class="fas fa-calendar-check me-2 ps-2"></i></label>
+                                            <input class="form-control  p-2" id="focusedInput" type="text"
+                                                placeholder="Select appoinment date">
+                                        </div>
+                                    </div>
+                                    <div class="col mt-3">
+                                        <div class="form-group d-flex align-items-center">
+                                            <label for="focusedInput"><i class="fas fa-user me-2 ps-2"></i></label>
+                                            <input class="form-control  p-2" id="focusedInput" type="text"
+                                                placeholder="Number of persons">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col text-center">
+                                        <a href="detail.html" class="form-btn">Search</a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <section id="trending-now">
+                        <div class="container">
+                            <div class="row">
+                                <h2 class="title">Kathmandu: 389 properties found</h2>
+                                <div class="search-nav">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">our top picks</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">top rated</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact" aria-selected="false">low rated</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact" aria-selected="false">top
+                                                reviewed</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="row">
+                                                <ul>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="./images/img-slider.png" alt="">
+                                                            </div>
+                                                            <div class="col-md-7 ">
+                                                                <div class="left-content">
+                                                                    <h5 class="card-title p-2 me-4">Shriya Beautyparlour
+                                                                        and
+                                                                        Cosmetics Center <span href="#"
+                                                                            class="star-btn">4.2
+                                                                            <i class="far fa-star"></i></span></h5>
+                                                                    <p class="card-text"><span><i
+                                                                                class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                            Kathmandu <span class="show-map"><i
+                                                                                    class="fas fa-map-marker-alt ms-2 me-2"></i>Show
+                                                                                on map</span></span>
+                                                                    </p>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a href="#" class="button-all">BOOK NOW</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="./images/img-slider.png" alt="">
+                                                            </div>
+                                                            <div class="col-md-7 ">
+                                                                <div class="left-content">
+                                                                    <h5 class="card-title p-2 me-4">Shriya Beautyparlour
+                                                                        and
+                                                                        Cosmetics Center <span href="#"
+                                                                            class="star-btn">4.2
+                                                                            <i class="far fa-star"></i></span></h5>
+                                                                    <p class="card-text"><span><i
+                                                                                class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                            Kathmandu <span class="show-map"><i
+                                                                                    class="fas fa-map-marker-alt ms-2 me-2"></i>Show
+                                                                                on map</span></span>
+                                                                    </p>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a href="#" class="button-all">BOOK NOW</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="./images/img-slider.png" alt="">
+                                                            </div>
+                                                            <div class="col-md-7 ">
+                                                                <div class="left-content">
+                                                                    <h5 class="card-title p-2 me-4">Shriya Beautyparlour
+                                                                        and
+                                                                        Cosmetics Center <span href="#"
+                                                                            class="star-btn">4.2
+                                                                            <i class="far fa-star"></i></span></h5>
+                                                                    <p class="card-text"><span><i
+                                                                                class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                            Kathmandu <span class="show-map"><i
+                                                                                    class="fas fa-map-marker-alt ms-2 me-2"></i>Show
+                                                                                on map</span></span>
+                                                                    </p>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a href="#" class="button-all">BOOK NOW</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="./images/img-slider.png" alt="">
+                                                            </div>
+                                                            <div class="col-md-7 ">
+                                                                <div class="left-content">
+                                                                    <h5 class="card-title p-2 me-4">Shriya Beautyparlour
+                                                                        and
+                                                                        Cosmetics Center <span href="#"
+                                                                            class="star-btn">4.2
+                                                                            <i class="far fa-star"></i></span></h5>
+                                                                    <p class="card-text"><span><i
+                                                                                class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                            Kathmandu <span class="show-map"><i
+                                                                                    class="fas fa-map-marker-alt ms-2 me-2"></i>Show
+                                                                                on map</span></span>
+                                                                    </p>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a href="#" class="button-all">BOOK NOW</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="./images/img-slider.png" alt="">
+                                                            </div>
+                                                            <div class="col-md-7 ">
+                                                                <div class="left-content">
+                                                                    <h5 class="card-title p-2 me-4">Shriya Beautyparlour
+                                                                        and
+                                                                        Cosmetics Center <span href="#"
+                                                                            class="star-btn">4.2
+                                                                            <i class="far fa-star"></i></span></h5>
+                                                                    <p class="card-text"><span><i
+                                                                                class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                            Kathmandu <span class="show-map"><i
+                                                                                    class="fas fa-map-marker-alt ms-2 me-2"></i>Show
+                                                                                on map</span></span>
+                                                                    </p>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a href="#" class="button-all">BOOK NOW</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <img src="./images/img-slider.png" alt="">
+                                                            </div>
+                                                            <div class="col-md-7 ">
+                                                                <div class="left-content">
+                                                                    <h5 class="card-title p-2 me-4">Shriya Beautyparlour
+                                                                        and
+                                                                        Cosmetics Center <span href="#"
+                                                                            class="star-btn">4.2
+                                                                            <i class="far fa-star"></i></span></h5>
+                                                                    <p class="card-text"><span><i
+                                                                                class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                            Kathmandu <span class="show-map"><i
+                                                                                    class="fas fa-map-marker-alt ms-2 me-2"></i>Show
+                                                                                on map</span></span>
+                                                                    </p>
+                                                                    <br>
+                                                                    <br>
+                                                                    <a href="#" class="button-all">BOOK NOW</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">...</div>
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="main-slider p-3">
+                                        <!-- <div class="owl-two">
+                                            <div class="slider-box ">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider-box">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top" src="./images/img-slider.png" alt="Card image cap">
+                                                    <a href="#" class="button-all">Rs 2000</a>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title p-2">Shriya Beautyparlour and Cosmetics Center</h5>
+                                                        <p class="card-text"><span class="location"><i
+                                                                    class="fas fa-map-marker-alt me-2"></i>Balaju,
+                                                                Kathmandu</span></p>
+                                                        <a href="#" class="star-btn">4.2 <i class="far fa-star"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                        </div> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer">
+            <div class="container-fluid m-auto">
+                <div class="row align-items-center">
+                    <div class="col-md-3 ">
+                        <div class="title-footer">
+                            <h2>Paradise</h2>
+                            <p>Open hours 8.00-18.00 Mon-Fri</p>
+                            <div class="socail-media-icon">
+                                <ul class="d-flex">
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div id="ocean_contact_info-6" class="footer-widget widget-oceanwp-contact-info clr">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <ul class="contact-info-widget default">
+                                <li class="address">
+                                    <div class="oceanwp-info-wrap">
+                                        <span class="oceanwp-contact-title">002-6666-8888</span><span
+                                            class="oceanwp-contact-text"><a>info.deercreative@gmail.com</a></span>
+                                    </div>
+                                </li>
+                                <li class="email">
+                                    <div class="oceanwp-info-wrap">
+                                        <span class="oceanwp-contact-title">40 Baria Street 133/2</span><span
+                                            class="oceanwp-contact-text"><a href="#">NewYork City, US</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="newsletter">
+                            <h4 class="widget-title mb-3">
+                                SUBSCRIBE OUR NEWSLETTER </h4>
+                            <div id="mc_embed_signup">
+                                <form class="d-flex "
+                                    action="//skat.us7.list-manage.com/subscribe/post?u=5ef55abee027ce066bca8313c&amp;id=46cd16464a"
+                                    method="post" id="mc-embedded-subscribe-form">
+
+                                    <div class="mc-field-group">
+                                        <input value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                                            placeholder="Email Address" type="email">
+                                    </div>
+
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                                    <div class=""><input value="Submit" name="subscribe" id="mc-embedded-subscribe"
+                                            class="button sd-opacity-trans" type="submit"></div>
+
+                                </form>
+                            </div>
+                            <p class="mt-4">Subscribe to our mailing list to got the updates to your email inbox</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="footer-img">
+                            <img src="./images/i1.jpg" alt="Sample photo">
+                            <img src="./images/i2.jpg" alt="Sample photo">
+                            <img src="./images/i3.jpg" alt="Sample photo">
+                            <img src="./images/i4.jpg" alt="Sample photo">
+                            <img src="./images/i5.jpg" alt="Sample photo">
+                            <img src="./images/i6.jpg" alt="Sample photo">
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div id="footer-bottom">
+        <div class="copyright">
+            <div class="container ">
+                <div class="row  align-items-center">
+                    <div class="col-md-6">
+                        <span>Copyright © 2021 Deercreative</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+    </div>
+    <div id="back-to-top" class="back-to-top">
+        <button class="btn btn-dark" title="Back to Top" style="display: block;">
+            <i class="fa fa-angle-up"></i>
+        </button>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQUERY SCRIPT - REQUIRED -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- RATE YO SCRIPT - REQUIRED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
