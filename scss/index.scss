@@ -280,7 +280,6 @@
         }
       }
       .tab-content {
-        background-color: white;
         ul {
           list-style: none;
           li {
@@ -326,17 +325,49 @@
                 @include button-all;
                 font-size: 14px;
                 text-align: end;
-                margin-left: 200px;
+                margin-left: 220px;
               }
               .column img {
-                opacity: 0.8; 
-                cursor: pointer; 
+                opacity: 0.8;
+                cursor: pointer;
+              }
+            }
+            .row {
+              background-color: white;
+            }
+          }
+        }
+        .img {
+          width: 100%;
+        }
+        .tab-warp {
+          figure {
+            max-width: 800px;
+            margin: 0 auto 0px;
+            img {
+              display: block;
+              max-width: 100%;
+              min-width: 100%;
+            }
+          }
+          .thumb_img_list {
+            text-align: start;
+            ul {
+              list-style: none;
+              @include MarPad;
+              li {
+                display: inline-block;
+                width: 64px;
+                margin: 0;
+                cursor: pointer;
+                img {
+                  display: block;
+                }
               }
             }
           }
         }
       }
     }
-    
   }
 }
