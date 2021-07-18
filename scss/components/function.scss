@@ -20,9 +20,9 @@
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
-  line-height: 28px;
   padding: 20px 40px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 @mixin linear-g {
   background: linear-gradient(
@@ -30,4 +30,7 @@
     #ff84fd -3.91%,
     rgba(122, 122, 253, 0) 230.74%
   );
+}
+@mixin linear-b {
+  background: linear-gradient(90.29deg, #7A7AFD 108.65%, rgba(170, 170, 255, 0) 108.66%);
 }

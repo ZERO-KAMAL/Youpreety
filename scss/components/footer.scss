@@ -8,7 +8,7 @@
 }
 @import "./function.scss";
 $title: #4f4f4f;
-footer {
+.footer {
   background-color: white !important;
   padding: 70px 0 70px 0px;
   .widget-title {
@@ -24,29 +24,32 @@ footer {
     width: 100%;
     margin-top: 25px;
   }
-  .oceanwp-info-wrap {
-    margin-bottom: 10px;
-    .oceanwp-contact-title {
-      color: $title !important;
-      font-weight: bold;
-      line-height: 1.4;
-      margin-bottom: 20px;
+
+  .footer-widget {
+    .contact-info-widget {
+      @include MarPad;
+      .oceanwp-info-wrap {
+        margin-bottom: 10px;
+        .oceanwp-contact-title {
+          color: $title !important;
+          font-weight: bold;
+          line-height: 1.4;
+          margin-bottom: 20px;
+        }
+        .oceanwp-contact-text {
+          width: 100%;
+          line-height: 18px;
+          display: block;
+          color: $stitle;
+          font-size: 14px;
+        }
+        a {
+          width: 100%;
+          color: #bcb4b4;
+          cursor: pointer;
+        }
+      }
     }
-    .oceanwp-contact-text {
-      width: 100%;
-      line-height: 18px;
-      display: block;
-      color: $stitle;
-      font-size: 14px;
-    }
-    a {
-      width: 100%;
-      color: #bcb4b4;
-      cursor: pointer;
-    }
-  }
-  .contact-info-widget {
-    @include MarPad;
   }
   .newsletter {
     input[type="submit"] {
@@ -116,6 +119,9 @@ footer {
         }
       }
     }
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
   .footer-img {
     display: flex;
@@ -132,6 +138,12 @@ footer {
   @media screen and (max-width: 768px) {
     .col-md-3 {
       margin-bottom: 70px;
+    }
+    .title-footer {
+      text-align: center !important;
+      ul{
+        display: none;
+      }
     }
   }
 }
