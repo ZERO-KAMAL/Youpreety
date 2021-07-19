@@ -71,7 +71,7 @@
         @media screen and (max-width: 762px) {
           .form-btn {
             position: absolute;
-            left:15%;
+            left: 15%;
           }
           .form-group {
             margin-top: 20px;
@@ -354,18 +354,100 @@
       }
     }
     @media screen and (max-width: 762px) {
-      .tab-content{
-        ul{
-          li{
-            .left-content{
-              .button-all{
+      .tab-content {
+        ul {
+          li {
+            .left-content {
+              .button-all {
                 margin-left: 60px !important;
-                
               }
             }
           }
         }
       }
+    }
+  }
+}
+#book-wrapper {
+  .top-bar {
+    padding: 0 0 25px;
+    .title {
+      @include title;
+      margin: 0%;
+      font-size: 29px;
+      line-height: 40px;
+    }
+    .rateYo {
+    
+      svg {
+        width: 25px;
+        height: 18px;
+      }
+    }
+    .trip-features {
+      @include MarPad;
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #000;
+      margin: 10px 0 -5px;
+      li{
+        padding: 0 15px 5px 0;
+        white-space: nowrap;
+        span{
+          color: #3eb368;
+          font-size: 13px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .star-btn {
+      @include linear-b;
+      padding: 2px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+    }
+    .based{
+      @include MarPad;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #000;
+      margin: 10px 0 -5px;
+      .based-inner{
+        margin-top: -20px;
+        margin-left: 85px;
+      }
+    }
+    .book-slider{
+    
+    }
+    @media screen and (max-width: 770px) {
+      .based{
+       .star-btn{
+         margin: 10px !important;
+       }
+       .based-inner{
+         margin-top: 20px;
+         margin-left: -5px;
+         
+       }
+      }
+    }
+    @media screen and (max-width:400px) {
+      text-align: center;
+      .based-inner{
+        margin-left: 10px !important;
+      }
+       
     }
   }
 }

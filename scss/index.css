@@ -825,4 +825,108 @@ body {
     margin-left: 60px !important;
   }
 }
+
+#book-wrapper .top-bar {
+  padding: 0 0 25px;
+}
+
+#book-wrapper .top-bar .title {
+  font-style: normal;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 42px;
+  color: #4f4f4f;
+  margin-bottom: 60px;
+  margin: 0%;
+  font-size: 29px;
+  line-height: 40px;
+}
+
+#book-wrapper .top-bar .rateYo svg {
+  width: 25px;
+  height: 18px;
+}
+
+#book-wrapper .top-bar .trip-features {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+  margin: 10px 0 -5px;
+}
+
+#book-wrapper .top-bar .trip-features li {
+  padding: 0 15px 5px 0;
+  white-space: nowrap;
+}
+
+#book-wrapper .top-bar .trip-features li span {
+  color: #3eb368;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+#book-wrapper .top-bar .star-btn {
+  background: linear-gradient(90.29deg, #7A7AFD 108.65%, rgba(170, 170, 255, 0) 108.66%);
+  padding: 2px 14px;
+  border-radius: 50px;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+#book-wrapper .top-bar .based {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+  margin: 10px 0 -5px;
+}
+
+#book-wrapper .top-bar .based .based-inner {
+  margin-top: -20px;
+  margin-left: 85px;
+}
+
+@media screen and (max-width: 770px) {
+  #book-wrapper .top-bar .based .star-btn {
+    margin: 10px !important;
+  }
+  #book-wrapper .top-bar .based .based-inner {
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #book-wrapper .top-bar {
+    text-align: center;
+  }
+  #book-wrapper .top-bar .based-inner {
+    margin-left: 10px !important;
+  }
+}
 /*# sourceMappingURL=index.css.map */
